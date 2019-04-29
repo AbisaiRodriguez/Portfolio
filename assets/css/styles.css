@@ -53,8 +53,18 @@ body{
 }
 
 .projTitle {
+    font-size: 2rem;
     margin-left: 10px;
     color: #34653C;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
 }
 
 .card {
@@ -88,10 +98,10 @@ body{
 
   #topPortion{
     background: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
       ), url("/assets/imgs/forest.jpeg");
-      height: 400px;
+      height: 700px;
       width: 100%;
       background-size: cover;
       background-position: center;
@@ -102,4 +112,14 @@ body{
     .bio {
         font-size: 14px;
     }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 70%;
+        grid-column-gap: 16px;
+        grid-row-gap: 20px;
+        justify-content: center;
+    }
+    
+
 }
