@@ -8,7 +8,7 @@ body{
 }
 .name {
     color: #34653C;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .nav-title {
@@ -83,7 +83,6 @@ body{
     margin-top: 5px;
     padding: 12px;
     color: black;
-    /* background-color: #34653C; */
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -93,7 +92,6 @@ body{
   }
   
   .card a:hover {
-    /* opacity: 0.7; */
     background-color: #34653C;
     color: white;
   }
@@ -110,7 +108,7 @@ body{
 
   @media (max-width:600px) {
     .bio {
-        font-size: 14px;
+        font-size: 16px;
     }
     .wrapper {
         display: grid;
