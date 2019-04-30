@@ -99,7 +99,7 @@ body{
   }
 
   #topPortion{
-    background: url("assets/imgs/forest.jpg");
+    background-image: url("/assets/imgs/forest.jpg");
     height: 700px;
     width: 100%;
     background-size: cover;
