@@ -103,7 +103,7 @@ body{
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
         ),
-        url("/assets/imgs/forest.jpg");
+        url("assets/imgs/forest.jpg");
     height: 700px;
     width: 100%;
     background-size: cover;
