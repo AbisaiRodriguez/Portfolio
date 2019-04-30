@@ -61,7 +61,7 @@ body{
 .wrapper {
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 220px 220px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-content: center;
@@ -75,25 +75,27 @@ body{
     font-family: arial;
   }
   
-  .price {
-    color: grey;
-    font-size: 22px;
-  }
   
-  .card button {
-    border: none;
+  .card a {
+    display: block;
+    border: 2px solid black;
     outline: 0;
+    margin-top: 5px;
     padding: 12px;
-    color: white;
-    background-color: #34653C;
+    color: black;
+    /* background-color: #34653C; */
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
   }
   
-  .card button:hover {
-    opacity: 0.7;
+  .card a:hover {
+    /* opacity: 0.7; */
+    background-color: #34653C;
+    color: white;
   }
 
   #topPortion{
