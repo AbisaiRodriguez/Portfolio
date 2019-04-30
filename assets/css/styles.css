@@ -99,22 +99,20 @@ body{
   }
 
   #topPortion{
-    background: linear-gradient(
+    background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ), url("/assets/imgs/forest.jpg");
-      height: 700px;
-      width: 100%;
-      background-size: cover;
-      background-position: center;
+        rgba(0, 0, 0, 0.5)),
+        url("/assets/imgs/forest.jpg");
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
   @media (max-width:600px) {
-
     .bio {
         font-size: 14px;
     }
-
     .wrapper {
         display: grid;
         grid-template-columns: 70%;
@@ -122,6 +120,4 @@ body{
         grid-row-gap: 20px;
         justify-content: center;
     }
-    
-
 }
