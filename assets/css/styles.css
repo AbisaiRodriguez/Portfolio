@@ -85,7 +85,7 @@ hr {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-content: center;
-    margin: 30px 0px 50px 0px;
+    
 }
 
 .card {
@@ -94,6 +94,7 @@ hr {
     display: inline-block;
     text-align: center;
     font-family: arial;
+    margin: 30px 0px 50px 0px;
 }
   
   
@@ -133,17 +134,27 @@ hr {
 }
 
 .container {
-    text-align: center;
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 200px;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
     justify-content: center;
+}
+
+.contacts {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    display: inline-block;
+    text-align: center;
+    min-width: 300px;
+    min-height: 200px;
     margin: 30px 0px 50px 0px;
 }
 
 .fa-envelope {
+    max-width: 300px;
+    grid-area: env;
     height: 75px;
     width: 75px;
     border-radius: 50px;
@@ -155,6 +166,7 @@ hr {
 }
 
 .fa-mobile-alt {
+    grid-area: mob;
     height: 75px;
     width: 75px;
     border-radius: 50px;
@@ -166,6 +178,7 @@ hr {
 }
 
 .fa-linkedin {
+    grid-area: link;
     height: 75px;
     width: 75px;
     border-radius: 50px;
@@ -174,15 +187,8 @@ hr {
     padding-top: 15px;
     font-size: 2.5rem;
     color: white;
-    padding-bottom: 20px;
 }
 
-.LinkedIn a {
-    position: relative;
-    top: 15px;
-    color: #2A3132;
-    text-decoration: none;
-}
 
 #resume {
     position: absolute;
@@ -197,51 +203,244 @@ hr {
     opacity: 0.8;
 }
 
-@media (max-width:970px) {
+@media screen and (min-width: 300px) {
+    .logo {
+        top: 30px;
+        left: 20px;
+    }
+
+    .bio {
+        left: 20px;
+        font-size: 22px;
+    }
+
+    .position {
+        top: 120px;
+        left: 20px;
+        font-size: 22px;
+
+    }
+
+    .info {
+        height: 40px;
+    }
+
+    .aboutMe  p {
+        padding-left: 40px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .projTitle {
+        font-size: 26px;
+        margin-left: 0;
+    }
+
     .wrapper {
-        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+    .contact h1 {
+        font-size: 28px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    #resume {
+        top: 30px;
+        right: 20px;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    .info {
+        height: 50px;
+    }
+    .bio {
+        left: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .position {
+        left: 40px;
+        top: 133px;
+        font-size: 1.2rem;
+    }
+    
+    .aboutMe  p {
+        padding-left: 40px;
+        margin-right: 20px;
+        font-size: 1.1rem;
+    }
+
+    .projTitle {
+        font-size: 2.0rem;
+        margin-left: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    #linkedin {
+        display: block;
+        color: #2A3132;
+    }
+}
+
+/* Extra small devices (phones, 600px and above) */
+@media screen and (min-width: 600px) {
+    .bio {
+        left: 50px;
+        font-size: 2.0rem;
+    }
+    
+    .position {
+        left: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .aboutMe  p {
+        padding-left: 50px;
+        font-size: 1.2rem;
+    }
+
+    .projTitle {
+        font-size: 2.0rem;
+        margin-left: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    #linkedin {
+        display: block;
+        color: #2A3132;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {    
+    .wrapper {
         display: grid;
         grid-template-columns: 300px 300px;
-        grid-template-rows: 410px 410px 410px;
-        grid-column-gap: 50px;
+        /* grid-template-rows: 410px 410px; */
+        grid-column-gap: 20px;
         grid-row-gap: 20px;
         justify-content: center;
     }
+
+    .projTitle {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
     .container {
-        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact{
         text-align: center;
-        display: grid;
-        grid-template-columns: 270px 270px;
-        grid-row-gap: 16px;
-        justify-content: center;
-        /* margin: 30px 0px 50px 0px; */
     }
 
-    .fa-linkedin {
-        top: 15px;
-        margin-left: 85%;
+    .contact h1 {
+        font-size: 2.5rem;
+        margin: 10px 0px 20px 0px; 
     }
+} 
 
-    .LinkedIn a {
-        margin-left: 35%; 
+/* Large devices (laptops/desktops, 1000px and up) */
+@media screen and (min-width: 1000px) {
+    .info {
+        height: 100px;
     }
-}
-
-  @media (max-width:600px) {
     .bio {
-        font-size: 16px;
+        left: 80px;
+        font-size: 2.5rem;
     }
+    
+    .position {
+        top: 150px;
+        left: 80px;
+        font-size: 2.0rem;
+    }
+
+    .aboutMe  p {
+        padding-left: 80px;
+        font-size: 1.8rem;
+    }
+
+    .projTitle {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    .contact h1 {
+        font-size: 2.5rem;
+        margin: 20px 0px 20px 0px; 
+    }
+
     .wrapper {
         display: grid;
-        grid-template-columns: 270px;
-        grid-column-gap: 16px;
+        grid-template-columns: 300px 300px 300px ;
+        grid-template-rows: 410px 410px;
+        grid-column-gap: 20px;
         grid-row-gap: 20px;
         justify-content: center;
     }
 
-    hr {
-        width: 300px;
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        justify-content: center;
     }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
-
-
