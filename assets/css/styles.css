@@ -256,6 +256,19 @@ hr {
         margin: 20px 0px 20px 0px;
     }
 
+    .fa-envelope {
+       margin-top: 35px;
+    }
+
+
+.fa-mobile-alt {
+    margin-top: 30px
+}
+
+.fa-linkedin {
+  margin-top: 30px;
+}
+
     #projects {
         text-align: center;
     }
@@ -439,8 +452,3 @@ hr {
         justify-content: center;
     }
 } 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
