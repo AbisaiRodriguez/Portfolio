@@ -159,7 +159,7 @@ html, body{
     width: 100%;
     font-size: 18px;
     text-decoration: none;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.4s;
 }
 
 .card:hover {
