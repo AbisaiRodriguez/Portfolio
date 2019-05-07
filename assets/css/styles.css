@@ -2,80 +2,130 @@
     box-sizing: border-box;
   }
 
-body{
-    font-family: 'Rubik', sans-serif;
+html, body{
     margin: 0;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 .navigation {
-    height: 100px;
+    position: fixed;
+    height: 60px;
     width: 100%;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    background: rgb(54, 57, 58);
 }
 
+
 .logo{
-    position: relative;
-    top: 35px;
+    font-size: 22px;
+    position: absolute;
+    top: 3px;
     left: 80px;
-    padding: 10px;
-    border: 5px solid #336B87;
+    padding: 5px;
+    border: 3px solid rgb(30, 131, 182);
     text-align: center;
     text-decoration: none;
-    color: #2A3132;
+    color: white;
+}
+
+.links {
+    padding: 20px 8px; 
+    float: right;
+    margin: 0 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover {
+    transition: ease-in-out 0.2s;
+    background-color: rgb(30, 131, 182);
 }
 
 .info{
     height: 100px;
     width: 100%;
+    text-align: center;
 }
 
 .bio {
-    position: absolute;
-    top: 90px;
-    left: 80px;
-    color: #336B87;
-    font-size: 2.5rem;
-}
-
-.position {
-    position: absolute;
-    top: 150px;
-    left: 80px;
-    color: #2A3132;
-    font-size: 1.8rem;
-}
-
-hr {
-    height:0px;
-    border-radius: 2px;
-    color: #336B87;
-    border: 2px solid;
-    width: 80%;
-    margin: auto;
-}
-
-.aboutMe {
-    height: 100px;
+    text-align: center;;
+    margin: 0px;
+    height: 460px;
     width: 100%;
+    width: 100%;
+    background-color: rgb(54, 57, 58);
 }
 
-.aboutMe  p {
-    padding-left: 80px;
+.name {
+    margin: 0px;
+    color: rgb(30, 131, 182);
+    font-size: 3.5rem;
+    padding: 80px 0px 20px 0px;
+}
+
+.occupation {
+    text-align: center;
+    color: white;
+    font-size: 2.0rem;
+    margin: 0;;
+}
+
+.about {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.about h1 {
+    margin: 0px;
+    padding: 100px 0px 20px 0px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgb(30, 131, 182);
+}
+
+.about p {
     font-weight: 300;
     font-size: 1.8rem;
     color: #2A3132;
 }
-.aboutMe span {
-    color: #336B87;
+.about span {
+    color: rgb(30, 131, 182);
+}
+
+.buttons {
+    font-size: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px;
+    color: rgb(30, 131, 182);
+    background-color: white;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.buttons:hover {
+    transition: ease-in-out 0.3s;
+    background-color: rgb(30, 131, 182);
+    color: white;
+}
+
+.projects {
+    height: 1080px;
+    text-align: center;
 }
 
 .projTitle {
+    padding: 100px 0px 40px 0px;
     font-weight: 400;
     font-size: 2.5rem;
     margin-left: 80px;
-    color: #336B87;
+    color: rgb(30, 131, 182);
 }
 
 .wrapper {
@@ -85,12 +135,11 @@ hr {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-content: center;
-    
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    width: 300px;
     display: inline-block;
     text-align: center;
     font-family: arial;
@@ -100,7 +149,7 @@ hr {
   
   .card a {
     display: block;
-    border: 3px solid #336B87;
+    border: 3px solid rgb(30, 131, 182);
     outline: 0;
     margin-top: 5px;
     padding: 12px;
@@ -112,22 +161,27 @@ hr {
     text-decoration: none;
     transition: ease-in-out 0.2s;
 }
+
+.card:hover {
+    width: 310px;
+    height: 422px;
+}
   
   .card a:hover {
-    background-color: #336B87;
+    background-color: rgb(30, 131, 182);
     color: white;
 }
 
   .contact{
     width: 100%;
-    height: 400px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    height: 500px;
+    
+ 
 }
 
 .contact h1 {
-    
-    color: #336B87;
+    padding: 50px 0px 40px 0px;
+    color: rgb(30, 131, 182);
     font-size: 2.5rem;
     font-weight: 400;
     margin: 20px 0px 20px 80px;
@@ -158,7 +212,7 @@ hr {
     height: 75px;
     width: 75px;
     border-radius: 50px;
-    background: #336B87;
+    background: rgb(30, 131, 182);
     text-align: center;
     padding-top: 15px;
     font-size: 2.5rem;
@@ -166,11 +220,10 @@ hr {
 }
 
 .fa-mobile-alt {
-    grid-area: mob;
     height: 75px;
     width: 75px;
     border-radius: 50px;
-    background: #336B87;
+    background: rgb(30, 131, 182);
     text-align: center;
     padding-top: 15px;
     font-size: 2.5rem;
@@ -178,34 +231,32 @@ hr {
 }
 
 .fa-linkedin {
-    grid-area: link;
     height: 75px;
     width: 75px;
     border-radius: 50px;
-    background: #336B87;
+    background: rgb(30, 131, 182);
     text-align: center;
     padding-top: 15px;
     font-size: 2.5rem;
     color: white;
 }
 
-
-#resume {
-    position: absolute;
-    top: 35px;
-    right: 80px;
-    color: #336B87;
-    font-weight: 500;
-    font-size: 1.8rem;
+.contacts a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding-top: 16px;
 }
 
-#resume:hover {
-    opacity: 0.8;
+.foot {
+    height: 80px;
+    width: 100%;
+    background: #2A3132;
 }
 
 @media screen and (min-width: 300px) {
     .logo {
-        top: 30px;
+        top: 8px;
         left: 20px;
     }
 
@@ -274,9 +325,10 @@ hr {
     }
 
     #resume {
-        top: 30px;
+        top: 15px;
         right: 20px;
     }
+
 }
 
 @media screen and (min-width: 350px) {
@@ -407,8 +459,10 @@ hr {
 @media screen and (min-width: 1000px) {
     .info {
         height: 100px;
+        text-align: center;
     }
     .bio {
+        text-align: center;
         left: 80px;
         font-size: 2.5rem;
     }
@@ -426,7 +480,7 @@ hr {
 
     .projTitle {
         font-size: 2.5rem;
-        margin-left: 0;
+        margin-bottom: 50px;
     }
 
     .contact h1 {
@@ -451,4 +505,5 @@ hr {
         grid-row-gap: 20px;
         justify-content: center;
     }
+   
 } 
