@@ -53,8 +53,7 @@ html, body{
 .bio {
     text-align: center;;
     margin: 0px;
-    height: 460px;
-    width: 100%;
+    height: 700px;
     width: 100%;
     background-color: rgb(54, 57, 58);
 }
@@ -63,7 +62,7 @@ html, body{
     margin: 0px;
     color: rgb(30, 131, 182);
     font-size: 3.5rem;
-    padding: 80px 0px 20px 0px;
+    padding: 200px 0px 20px 0px;
 }
 
 .occupation {
@@ -74,7 +73,7 @@ html, body{
 }
 
 .about {
-    height: 400px;
+    height: 600px;
     width: 100%;
     text-align: center;
 }
@@ -130,8 +129,8 @@ html, body{
 
 .wrapper {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 410px 410px;
+    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: 430px 430px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-content: center;
@@ -139,10 +138,10 @@ html, body{
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 300px;
+    max-width: 300px;
     display: inline-block;
     text-align: center;
-    margin: 30px 0px 50px 0px;
+  
 }
 
 .card > h1 {
@@ -170,11 +169,6 @@ html, body{
     font-size: 18px;
     text-decoration: none;
     transition: ease-in-out 0.4s;
-}
-
-.card:hover {
-    width: 310px;
-    height: 415px;
 }
   
   .card a:hover {
@@ -259,17 +253,44 @@ html, body{
 }
 
 .foot {
+    display: block;
     height: 80px;
     width: 100%;
     background: #2A3132;
 }
 
 @media screen and (min-width: 300px) {
+    .navigation {
+        height: 60px;
+        width: 100%;
+        font-size: 15px;
+    }
+    
     .logo {
-        top: 8px;
-        left: 20px;
+        top: 11px;
+        left: 5px;
+        font-size: 18px;
     }
 
+    .links {
+        padding: 20px 2px; 
+        float: right;
+        margin: 0 2px;
+        text-decoration: none;
+        color: white;
+    } 
+
+    .about {
+        height: 400px;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 20px;
+    }
     .bio {
         left: 20px;
         font-size: 22px;
@@ -291,10 +312,14 @@ html, body{
         margin-right: 20px;
         font-size: 18px;
     }
+    .projects {
+        height: 2500px;
+    }
 
     .projTitle {
-        font-size: 26px;
+        font-size: 30px;
         margin-left: 0;
+        padding: 50px 0px 20px 0px;
     }
 
     .wrapper {
@@ -308,12 +333,13 @@ html, body{
         flex-direction: column;
         align-items: center;
     }
-
-    .contact {
+    .contact{
+        height: 1111px;
         text-align: center;
     }
+
     .contact h1 {
-        font-size: 28px;
+        font-size: 30px;
         margin: 20px 0px 20px 0px;
     }
 
@@ -322,21 +348,23 @@ html, body{
     }
 
 
-.fa-mobile-alt {
-    margin-top: 30px
-}
+    .fa-mobile-alt {
+        margin-top: 30px
+    }
 
-.fa-linkedin {
-  margin-top: 30px;
-}
+    .fa-linkedin {
+        margin-top: 30px;
+    }
+
+    .foot {
+        display: block;
+        height: 80px;
+        width: 100%;
+        background: #2A3132;
+    }
 
     #projects {
         text-align: center;
-    }
-
-    #resume {
-        top: 15px;
-        right: 20px;
     }
 
 }
@@ -362,6 +390,10 @@ html, body{
         font-size: 1.1rem;
     }
 
+    .projects {
+        height: 2500px;
+    }
+
     .projTitle {
         font-size: 2.0rem;
         margin-left: 0;
@@ -377,6 +409,13 @@ html, body{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .foot {
+        display: block;
+        height: 80px;
+        width: 100%;
+        background: #2A3132;
     }
 
     #projects {
@@ -401,9 +440,16 @@ html, body{
         font-size: 1.5rem;
     }
     
+    .about {
+        height: 600px;
+    }
+
     .aboutMe  p {
         padding-left: 50px;
         font-size: 1.2rem;
+    }
+    .projects {
+        height: 2500px;
     }
 
     .projTitle {
@@ -423,6 +469,17 @@ html, body{
         align-items: center;
     }
 
+    .foot {
+        display: block;
+        height: 80px;
+        width: 100%;
+        background: #2A3132;
+    }
+    .contact{
+        height: 1111px;
+        text-align: center;
+    }
+
     #projects {
         text-align: center;
     }
@@ -434,17 +491,43 @@ html, body{
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {    
+@media screen and (min-width: 768px) {  
+    .navigation {
+        height: 60px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .links {
+        padding: 18px 8px; 
+        float: right;
+        margin: 0 2px;
+        text-decoration: none;
+        color: white;
+    } 
+
+    .about h1 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 2rem;
+    }
+
     .wrapper {
         display: grid;
         grid-template-columns: 300px 300px;
-        /* grid-template-rows: 410px 410px; */
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         justify-content: center;
     }
 
+    .projects {
+        height: 1550px;
+    }
+
     .projTitle {
+
         font-size: 2.5rem;
         margin-left: 0;
     }
@@ -456,12 +539,14 @@ html, body{
     }
 
     .contact{
+        height: 1111px;
         text-align: center;
     }
 
     .contact h1 {
         font-size: 2.5rem;
-        margin: 10px 0px 20px 0px; 
+        padding: 100px 0px 40px 0px;
+        margin: 0px;
     }
 } 
 
@@ -483,14 +568,25 @@ html, body{
         font-size: 2.0rem;
     }
 
-    .aboutMe  p {
-        padding-left: 80px;
-        font-size: 1.8rem;
+    .about h1 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 2rem;
     }
 
     .projTitle {
+        padding-top: 50px
         font-size: 2.5rem;
         margin-bottom: 50px;
+    }
+    .projects {
+        height: 1111px;
+    }
+    .contact{
+        height: 550px;
+        text-align: center;
     }
 
     .contact h1 {

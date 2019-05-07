@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
 </head>
 <body>
     <section id="navbar">
@@ -23,7 +26,7 @@
     
     <section id="intro">
         <div class="bio">
-            <p class="name">Abisai Rodriguez</p>
+            <p class="name wow flipInX">Abisai Rodriguez</p>
             <p class="occupation">Front-End Web Developer</p>
             <a class="buttons" href="https://github.com/AbisaiRodriguez">Github</a>
             <a class="buttons" href="https://www.linkedin.com/in/abisairodriguez13/">LinkedIn</a>
@@ -31,7 +34,7 @@
     </section>
 
     <section id="aboutMe">
-        <div class="about">
+        <div class="about wow slideInLeft" >
             <h1>About Me</h1>
             <p>I am a Web Developer working in San Diego, CA.
             <br>
@@ -46,7 +49,7 @@
         <div class="projects">
             <h1 class="projTitle">Projects</h1>
             <div class="wrapper">
-                <div class="card">
+                <div class="card wow slideInLeft">
                     <img src="assets/imgs/computer.jpg" alt="" style="width:100%">
                     <h1>Museum of Candy</h1>
                     <p>Tech Stack: HTML5, CSS3, Bootstrap, jQuery</p>
@@ -54,7 +57,7 @@
                     <a href="https://github.com/AbisaiRodriguez/Museum-of-Candy">GitHub</a>
                 </div>
 
-                <div class="card">
+                <div class="card wow slideInUp">
                     <img src="assets/imgs/computer.jpg" alt="" style="width:100%">
                     <h1>Purrfect Match</h1>
                     <p>Tech Stack: HTML5, CSS3, Bootstrap</p>
@@ -62,7 +65,7 @@
                     <a href="https://github.com/AbisaiRodriguez/Purrfect-Match">GitHub</a>
                 </div>
 
-                <div class="card">
+                <div class="card wow slideInRight">
                     <img src="assets/imgs/computer.jpg" alt="" style="width:100%">
                     <h1>Patatap Clone</h1>
                     <p>Tech Stack: HTML5, CSS3, Howler.JS, Paper-Full.JS</p>
@@ -70,7 +73,7 @@
                     <a href="https://github.com/AbisaiRodriguez/Patatap-Clone">GitHub</a>
                 </div>
 
-                <div class="card">
+                <div class="card wow slideInLeft">
                     <img src="assets/imgs/computer.jpg" alt="" style="width:100%">
                     <h1>ToDo List</h1>
                     <p>Tech Stack: HTML5, CSS3, jQuery</p>
@@ -78,7 +81,7 @@
                     <a href="https://github.com/AbisaiRodriguez/TodoListProject">GitHub</a>
                 </div>
     
-                <div class="card">
+                <div class="card wow slideInUp">
                     <img src="assets/imgs/computer.jpg" alt="" style="width:100%">
                     <h1>La Vina De Oro</h1>
                     <p>Tech Stack: HTML5, CSS3, Bootstrap, jQuery</p>
@@ -86,7 +89,7 @@
                     <a href="https://github.com/AbisaiRodriguez/La-Vina-de-Oro">GitHub</a>
                 </div>
     
-                <div class="card">
+                <div class="card wow slideInRight">
                     <img src="assets/imgs/computer.jpg" alt="" style="width:100%">
                     <h1>Color Game</h1>
                     <p>Tech Stack: HTML5, CSS3, Vanilla JS</p>
@@ -101,15 +104,15 @@
         <div class="contact">
             <h1>Contact</h1>
             <div class="container">
-                <div class="contacts">
+                <div class="contacts wow bounceInLeft">
                     <span><i class="far fa-envelope"></i></span>
                     <a href="abisai.rodriguez13@gmail.com">abisairodriguez13@gmail.com</a>
                 </div>
-                <div class="contacts">
+                <div class="contacts wow bounceInUp">
                     <span><i class="fas fa-mobile-alt"></i></span>
                     <p>(760) 814-5560</p>
                 </div>
-                <div class="contacts">
+                <div class="contacts wow bounceInRight">
                     <span><i class="fab fa-linkedin"></i></span>
                     <a href="https://www.linkedin.com/in/abisairodriguez13/">abisairodriguez13</a>
                 </div>
@@ -120,5 +123,18 @@
     <footer>
         <div class="foot"></div>
     </footer>
+
+    <script>
+            wow = new WOW(
+              {
+                  boxClass:     'wow',      // default
+                  animateClass: 'animated', // change this if you are not using animate.css
+                  offset:       0,          // default
+                  mobile:       true,       // keep it on mobile
+                  live:         true        // track if element updates
+                }
+              )
+             wow.init();
+          </script>
 </body>
 </html>
