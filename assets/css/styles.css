@@ -67,13 +67,13 @@ body {
     display: inline-block;
     margin-top: 200px;
     text-align: left;
-    width: 60%;
+    width: 65%;
     margin-bottom: 200px;
     float: left;
 }
 #intro .container .bio .name{
     color: #59ABE3;
-    font-size: 4.2rem;
+    font-size: 4.8rem;
     font-weight: 500;
 }
 #intro .container .bio .buttons{
@@ -96,12 +96,12 @@ body {
 }
 #intro .container .image-area{
     display: inline-block;
-    width: 40%;
+    width: 35%;
     float: left;
 }
 #intro .container .image-area img{
     display: inline-block;
-    width: 90%;
+    width: 100%;
 }
 #intro .container:after {
     clear: both;
