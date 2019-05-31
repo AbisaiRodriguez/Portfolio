@@ -5,43 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Abisai Rodriguez Portfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <section id="navbar">
-        <div class="navigation">
-            <a class="logo" href="index.html">A\R</a>
-            <a class="links "href="#" target="_blank">Resume</a>
-            <a class="links" href="#contacts">Contact</a>
-            <a class="links" href="#project">Projects</a>
-            <a class="links" href="#aboutMe">About Me</a>
+    <header id="navbar">
+        <div class="container">
+            <div class="logo-area">
+                <p>A\R</p>
+            </div>
+            <div class="menu">
+                <ul class="links">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
-    
+    </header>
+
     <section id="intro">
-        <div class="bio">
-            <p class="name wow flipInX">Abisai Rodriguez</p>
-            <p class="occupation">Front-End Web Developer</p>
-            <a class="buttons" href="https://github.com/AbisaiRodriguez">Github</a>
-            <a class="buttons" href="https://www.linkedin.com/in/abisairodriguez13/">LinkedIn</a>
-        </div> 
+        <div class="container">
+            <div class="bio">
+                <h2 class="name wow fadeInLeft">Hi,</h2>
+                <h2 class="name wow fadeInLeft">I'm Abisai Rodriguez</h2>
+                <h2 class="name wow fadeInLeft">Web Developer</h2>
+                <a class="buttons wow fadeInLeft" href="https://github.com/AbisaiRodriguez">Github</a>
+                <a class="buttons wow fadeInLeft" href="https://www.linkedin.com/in/abisairodriguez13/">LinkedIn</a>
+                <a class="buttons wow fadeInLeft" href="#" target="">Resume</a>
+            </div> 
+            <div class="image-area">
+                <img src="assets/imgs/abisai.jpeg" alt="">
+            </div>
+        </div>
     </section>
 
     <section id="aboutMe">
-        <div class="about wow slideInLeft" >
-            <h1>About Me</h1>
-            <p>I am a Web Developer working in San Diego, CA.
-            <br>
-                I have a passion for creating <span>creative</span> and <span>stylistic</span> web sites.
-            <br>
-                I graduated from California State University San Marcos with a Bachelors in Computer Science.
-            </p>
+        <div class="container">
+            <div class="about wow slideInLeft" >
+                <h1>About Me</h1>
+                <p>I am a Web Developer working in San Diego, CA.
+                    I have a passion for creating <span>creative</span> and <span>stylistic</span> web sites.
+                    I graduated from California State University San Marcos with a Bachelors in Computer Science.
+                </p>
+            </div>
+            <div class="skills wow slideInRight">
+                <h1>Skills</h1>
+                <div class="row"> 
+                    <div class="column">
+                        <img src="assets/imgs/html5.png" alt="">
+                        <img src="assets/imgs/bootstrap.png" alt="">
+                    </div>
+                    <div class="column">
+                        <img src="assets/imgs/css3.png" alt="">
+                        <img class="jQ"  src="assets/imgs/jQ.png" alt="">
+                    </div> 
+                    <div class="column">
+                        <img src="assets/imgs/js.png" alt="">
+                        <img src="assets/imgs/sass.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section> 
 
