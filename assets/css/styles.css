@@ -302,3 +302,32 @@ footer .foot {
     height: 80px;
     background: black;
 }
+
+/* On screens that are 2400px or less*/
+@media screen and (max-width: 2400px) {
+    
+}
+/* On screens that are 1200px or less*/
+@media screen and (max-width: 1200px) {
+    
+}
+/* On screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+    
+}
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    
+}
+/* On screens that are 500px or less */
+@media screen and (max-width: 500px) {
+    
+}
+/* On screens that are 400px or less */
+@media screen and (max-width: 400px) {
+    
+}
+/* On screens that are 300px or less */
+@media screen and (max-width: 300px) {
+    
+}
