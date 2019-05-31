@@ -102,6 +102,7 @@ body {
 #intro .container .image-area img{
     display: inline-block;
     width: 100%;
+    height: auto;
 }
 #intro .container:after {
     clear: both;
@@ -120,7 +121,7 @@ body {
 }
 #aboutMe .container .about h1{
     margin-bottom: 30px;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 400;
     color: #59ABE3;
     text-align: center;
@@ -138,97 +139,74 @@ body {
 }
 #aboutMe .container .skills h1{
     margin-bottom: 30px;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 400;
     color: #59ABE3;
     text-align: center;
 }
-#aboutMe .container .skills .row {
+#aboutMe .container .skills .row{
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
-  
-  /* Create four equal columns that sits next to each other */
-#aboutMe .container .skills .column {
+  /* Create 3 equal columns that sits next to each other */
+#aboutMe .container .skills .column{
     flex: 33.33%;
     max-width: 33.33%;
     padding: 0 4px;
 }
-  
-#aboutMe .container .skills .column img {
+#aboutMe .container .skills .column img{
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
 }
-#aboutMe .container:after {
+#aboutMe .container:after{
     clear: both;
     content: "";
     display: table;
 }
-.projects {
-    height: 1080px;
-    text-align: center;
-}
-
-.projTitle {
-    padding: 100px 0px 40px 0px;
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin-left: 80px;
-    color: #59ABE3;;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 280px 280px 280px;
-    grid-template-rows: 430px 430px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+#project .container{
+    margin: 100px 40px;
     display: inline-block;
+}
+#project .container h1{
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #59ABE3;
     text-align: center;
+}
+#project .container .row{
+    margin: 8px -16px;
+}
+  /* Add padding BETWEEN each column (if you want) */
+#project .container .row,
+#project .container .row > .column{
+    padding: 8px;
+}
+  /* Create 3 equal columns that floats next to each other */
+#project .container .row .column{
+    float: left;
+    width: 33.33%;
+}
+  /* Clear floats after rows */ 
+#project .container .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
   
+  /* Content */
+#project .container .row .column .content{
+    background-color: white;
+    padding: 10px;
+    -webkit-box-shadow: -7px 10px 17px 2px rgba(128,125,128,0.6);
+    -moz-box-shadow: -7px 10px 17px 2px rgba(128,125,128,0.6);
+    box-shadow: -7px 10px 17px 2px rgba(128,125,128,0.6);
 }
 
-.card > h1 {
-    margin: 0px;
-    padding: 0px 0px 8px 0px;
-}
 
-.card > p {
-    margin: 0px;
-    font-size: 12px;
-    padding: 0px 0px 8px 0px;
-}
-  
-  
-  .card a {
-    display: block;
-    border: 3px solid #59ABE3;;
-    outline: 0;
-    margin-top: 5px;
-    padding: 12px;
-    color: black;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    text-decoration: none;
-    transition: ease-in-out 0.4s;
-}
-  
-  .card a:hover {
-    background-color: #59ABE3;;
-    color: white;
-}
-
-  .contact{
+.contact{
     width: 100%;
     height: 500px;
     
