@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
   }
-body {
+html,body {
     font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
 }
 #navbar{
     display: flex;
@@ -300,8 +301,9 @@ footer .foot {
 }
 /* On screens that are 768px or less */
 @media screen and (max-width: 768px) {
-    body{
+    html, body{
         overflow-x: hidden;
+        position: relative;
     }
     #navbar .nav-links{
         position: absolute;
@@ -314,7 +316,6 @@ footer .foot {
         align-items: center;
         width: 50%;
         transform: translateX(100%);
-        transition: all .5s ease-in;
     }
     #navbar .nav-links li{
         opacity: 0;
@@ -326,6 +327,7 @@ footer .foot {
    
 }
 #navbar .active{
+    transition: all .5s ease-in;
     transform: translateX(0%);
 }
 
