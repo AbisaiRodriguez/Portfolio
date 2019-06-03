@@ -324,12 +324,65 @@ footer .foot {
         display: block;
         cursor: pointer;
     }
-   
+    #intro .container {
+        margin: 100px 40px 0;
+    }
+    #intro .container .bio {
+        display: inline-block;
+        margin-top: 77px;
+        text-align: left;
+        width: 65%;
+        margin-bottom: 200px;
+        float: left;
+    }
+    #intro .container .bio .name {
+        font-size: 3rem;
+    }
+    #intro .container .bio .buttons {
+        font-size: 1.5rem;
+        padding: 7px;
+        color: #59ABE3;
+    }
+    #aboutMe .container .about h1 {
+        font-size: 2.5rem;
+    }
+    #aboutMe .container .about {
+        padding: 3px;
+    }
+    #aboutMe .container .about p {
+        font-size: 1.2rem;
+    }
+    #aboutMe .container .skills {
+        padding: 3px;
+    }
+    #aboutMe .container .skills h1 {
+        font-size: 2.5rem;
+    }
+    #aboutMe .container .skills .row {
+        padding: 0 8px;
+    }
+    #project .container h1 {
+        font-size: 2.5rem;
+    }
+    #project .container .row .column {
+        width: 100%;
+        margin-bottom: 23px;
+    }
+    #contact .container h1 {
+        font-size: 2.5rem;
+    }
+    #contact .container .row {
+        padding: 0 0px;
+    }
+    #contact .container .row .column .contact-area {
+        padding: 36px 0px;
+    }
+    #contact .container .row .column .contact-area a {
+        font-size: 1rem;
+    }
 }
-#navbar .active{
-    transition: all .5s ease-in;
-    transform: translateX(0%);
-}
+
+
 
 
 /* On screens that are 500px or less */
@@ -344,6 +397,11 @@ footer .foot {
 /* @media screen and (max-width: 300px) {
      
 } */
+
+#navbar .active{
+    transition: all .5s ease-in;
+    transform: translateX(0%);
+}
 
 @keyframes navLinkFade{
     from{
