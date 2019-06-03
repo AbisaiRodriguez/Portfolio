@@ -382,21 +382,78 @@ footer .foot {
     }
 }
 
-
-
-
-/* On screens that are 500px or less */
-/* @media screen and (max-width: 500px) {
+/* On screens that are 650px or less */
+/* @media screen and (max-width: 650px) {
     
 } */
 /* On screens that are 400px or less */
 /* @media screen and (max-width: 400px) {
     
 } */
-/* On screens that are 300px or less */
-/* @media screen and (max-width: 300px) {
-     
-} */
+/* On screens that are 320px or less */
+ @media screen and (max-width: 320px) {
+    #intro .container {
+    margin: 80px 20px 0;
+    }
+    #intro .container .bio {
+        margin-top: 0;
+        margin-bottom: 100px;
+        width: 50%;
+    }
+    #intro .container .bio .name {
+        font-size: 1.2rem;
+    }
+    #intro .container .bio .buttons {
+        font-size: 0.5rem;
+        padding: 4px;
+        margin: 10px 0 0 0;
+        border: 2px solid #59ABE3;
+        -webkit-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        -moz-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        color: white;
+        background: #59ABE3;
+    }
+    #intro .container .image-area {
+        width: 50%;
+    }
+    #aboutMe .container {
+        margin: 30px 20px;
+        display: inline-block;
+    }
+    #aboutMe .container .about {
+        width: 100%;
+        display: inline-block;
+        float: left;
+        margin-bottom: 30px;
+    }
+    #aboutMe .container .skills {
+        width: 100%;
+        display: inline-block;
+        float: left;
+    }
+    #project .container {
+        margin: 30px 40px;
+    }
+    #project .container .row, #project .container .row > .column {
+        padding: 0px;
+    }
+    #project .container .row .column .content {
+        padding: 0px;
+        -webkit-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        -moz-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+    }
+    #project .container .row .column .content h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #project .container .row .column .content p {
+        font-size: .8rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+} 
 
 #navbar .active{
     transition: all .5s ease-in;
