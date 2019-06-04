@@ -192,7 +192,8 @@ html,body {
     -webkit-box-shadow: -7px 10px 17px 2px rgba(128,125,128,0.6);
     -moz-box-shadow: -7px 10px 17px 2px rgba(128,125,128,0.6);
     box-shadow: -7px 10px 17px 2px rgba(128,125,128,0.6);
-    line-height: 1.2
+    line-height: 1.2;
+    text-align: center;
 }
 #project .container .row .column .content img{
     height: 350px;
