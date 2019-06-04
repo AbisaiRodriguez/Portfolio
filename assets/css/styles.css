@@ -188,6 +188,9 @@ html,body {
     box-shadow: -7px 10px 17px 2px rgba(128,125,128,0.6);
     line-height: 1.2
 }
+#project .container .row .column .content img{
+    height: 350px;
+}
 #project .container .row .column .content .middle {
     transition: .3s ease-in-out;
     opacity: 0;
@@ -392,21 +395,45 @@ footer .foot {
 } */
 /* On screens that are 320px or less */
  @media screen and (max-width: 320px) {
+    html, body{
+        overflow-x: hidden;
+        position: relative;
+    }
+    #navbar .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+    #navbar .nav-links li{
+        opacity: 0;
+    }
+    #navbar .burger{
+        display: block;
+        cursor: pointer;
+    }
     #intro .container {
-    margin: 80px 20px 0;
+    margin: 40px 20px 0;
     }
     #intro .container .bio {
         margin-top: 0;
-        margin-bottom: 100px;
-        width: 50%;
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: center;
     }
     #intro .container .bio .name {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     #intro .container .bio .buttons {
-        font-size: 0.5rem;
+        font-size: 1.2rem;
         padding: 4px;
-        margin: 10px 0 0 0;
+        margin: 15px 0 0 0;
         border: 2px solid #59ABE3;
         -webkit-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
         -moz-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
@@ -415,10 +442,12 @@ footer .foot {
         background: #59ABE3;
     }
     #intro .container .image-area {
-        width: 50%;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 40px;
     }
     #aboutMe .container {
-        margin: 30px 20px;
+        margin: 80px 20px;
         display: inline-block;
     }
     #aboutMe .container .about {
@@ -444,6 +473,19 @@ footer .foot {
         -moz-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
         box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
     }
+    #project .container .row .column .content img{
+        height: 250px;
+    }
+    #project .container .row .column .content .middle .button a {
+        font-size: 1rem;
+        padding: 8px;
+        color: white;
+        background: #59ABE3;
+        border: 2px solid #59ABE3;
+        -webkit-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        -moz-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+    }
     #project .container .row .column .content h3 {
         font-size: 1.5rem;
         text-align: center;
@@ -452,6 +494,29 @@ footer .foot {
         font-size: .8rem;
         text-align: center;
         padding-bottom: 10px;
+    }
+    #contact .container {
+        margin: 60px 20px;
+    }
+    #contact .container .row .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0px 4px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #contact .container .row .column .contact-area {
+        padding: 10px 0px;
+        -webkit-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        -moz-box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+        box-shadow: 0px 3px 5px 1px rgba(128,125,128,0.6);
+    }
+    
+    #contact .container .row .column .contact-area span i {
+        font-size: 1.8rem;
+    }
+    #contact .container .row .column .contact-area a {
+        font-size: 1rem;
     }
 } 
 
